@@ -38,7 +38,7 @@ export default defineConfig({
     siteTitle: 'ikun ui',//logo标题
     outline: 3,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/quanminzhizuoren/ikunui' }
     ],
     nav,
     sidebar
