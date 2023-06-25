@@ -1,0 +1,24 @@
+@import './root.less';
+@import './transition.less';
+@import './theme.less';
+
+::selection {
+  background: #ff1875;
+  color: aliceblue;
+}
+
+.i-border {
+  border: @i-border-size solid @i-theme;
+}
+.i-shadow {
+  box-shadow: 0 0 12px #00000019;
+}
+.i-text-shadow(@color:@i-theme) {
+  text-shadow: 0 0 1.5em @color;
+}
+
+.i-icon {
+  fill: #242424;
+  width: 0.5em;
+  height: 0.5em;
+}

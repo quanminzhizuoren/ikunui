@@ -1,0 +1,25 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "types",
+    "env.d.ts",
+    "docs"
+    // "src/**/__tests__/*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "third-lib": [
+        "node_modules/third-lib"
+      ],
+    }
+  }
+}

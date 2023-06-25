@@ -1,0 +1,122 @@
+@import url('../../style/index.less');
+.i-select {
+  font-size: var(--select-size);
+  border-radius: var(--select-radius);
+  width: fit-content;
+  min-width: 1em;
+  height: 1em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.1s;
+  box-sizing: border-box;
+  padding: 0.1em;
+  background: none;
+  color: @i-color;
+  &-input_ {
+    position: relative;
+  }
+  &-input {
+    color: @i-color;
+    backdrop-filter: blur(8px);
+    background-color: @i-bg;
+    border-radius: var(--select-radius);
+    font-size: 0.4em;
+    padding: 0 0.5em;
+    min-width: 1em;
+    width: fit-content;
+    height: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.2s;
+    border: var(--select-border-size) solid @i-weaken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:focus {
+      border-color: @i-theme;
+    }
+  }
+}
+.i-option-content {
+  color: @i-color;
+  background-color: @i-bg;
+  backdrop-filter: blur(8px);
+  font-size: var(--select-size);
+  position: absolute;
+  top: var(--select-y);
+  left: var(--select-x);
+  border-radius: var(--select-radius);
+  overflow: hidden;
+  z-index: 999;
+  .i-shadow;
+  box-sizing: border-box;
+  border: var(--select-border-size) solid @i-theme;
+  transform: translate(0);
+
+  //
+  top: var(--select-option-y);
+  left: var(--select-option-x);
+  width: var(--select-option-width);
+  height: var(--select-option-height);
+  border-radius: calc(var(--select-radius) * 1);
+}
+.i-option-list {
+  width: fit-content;
+  position: relative;
+  box-sizing: border-box;
+}
+.i-option-body {
+  width: fit-content;
+  height: fit-content;
+}
+.i-option-animation {
+  animation: 0.2s forwards open_option ease-out;
+  cursor: not-allowed;
+}
+
+@keyframes open_option {
+  from {
+    width: var(--select-width);
+    height: var(--select-height);
+    border-radius: var(--select-radius);
+    top: var(--select-y);
+    left: var(--select-x);
+  }
+
+  to {
+    top: var(--select-option-y);
+    left: var(--select-option-x);
+    width: var(--select-option-width);
+    height: var(--select-option-height);
+    border-radius: calc(var(--select-radius) * 1);
+  }
+}
+
+.i-option-animation_hide {
+  animation: 0.2s forwards hide_option ease-out;
+  cursor: not-allowed;
+}
+
+@keyframes hide_option {
+  from {
+    top: var(--select-option-y);
+    left: var(--select-option-x);
+    width: var(--select-option-width);
+    height: var(--select-option-height);
+    border-radius: calc(var(--select-radius) * 1);
+  }
+
+  80% {
+    opacity: 1;
+  }
+  to {
+    width: var(--select-width);
+    height: var(--select-height);
+    border-radius: var(--select-radius);
+    top: var(--select-y);
+    left: var(--select-x);
+    opacity: 0;
+  }
+}
