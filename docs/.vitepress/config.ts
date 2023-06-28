@@ -56,7 +56,10 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-      markdown()
-    ]
+      markdown(),
+    ],
+    build: {
+      // outDir: 'doc'
+    }
   }
 })
