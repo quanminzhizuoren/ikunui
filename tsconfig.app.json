@@ -1,7 +1,7 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": [
-    "src"
+    "src",
   ],
   "exclude": [
     "node_modules",
@@ -13,13 +13,13 @@
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
+    "types": [
+      "./types/global"
+    ],
     "paths": {
       "@/*": [
         "./src/*"
-      ],
-      "third-lib": [
-        "node_modules/third-lib"
-      ],
+      ]
     }
   }
 }

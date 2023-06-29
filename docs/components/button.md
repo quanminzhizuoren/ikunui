@@ -1,20 +1,12 @@
 # 按钮
 
-第一个示例：
+## 基础用法
 
-```vue preview
-<template>
-  <i-button @click="count++">计数{{ count }}</i-button>
-  count：{{ count }}
-</template>
+:::preview title || component description content 21312321
 
-<script setup lang="ts">
-import { ref } from 'vue'
-const count = ref(0)
-</script>
-```
+demo-preview=../demo/button/basic.vue
 
-第二个示例：
+:::
 
 ## 组件介绍
 

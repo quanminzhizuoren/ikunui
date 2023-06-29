@@ -1,19 +1,12 @@
 # 输入框
 
-第一个示例：
+## 基础用法
 
-```vue preview
-<template>
-  <i-input v-model="value" />
-</template>
+:::preview ||
 
-<script setup lang="ts">
-import { ref } from 'vue'
-const value = ref('')
-</script>
-```
+demo-preview=../demo/input/basic.vue
 
-第二个示例：
+:::
 
 ## 组件介绍
 
@@ -22,3 +15,7 @@ const value = ref('')
 ## 方法
 
 ## 插槽
+
+```
+
+```

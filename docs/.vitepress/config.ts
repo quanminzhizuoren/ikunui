@@ -1,7 +1,8 @@
-import markdown from 'vite-plugin-markdown-preview';
+// import markdown from 'vite-plugin-markdown-preview';
+import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin';
 import { DefaultTheme, defineConfig } from 'vitepress';
 import { components } from '../list';
-
+// import demo from 'vuepress-plugin-demo-code';
 const nav: DefaultTheme.NavItem[] = [
   { text: '指南', link: '/guide/' },
   { text: '组件', link: '/components/button' }
@@ -25,6 +26,7 @@ const sidebar: DefaultTheme.Sidebar = {
 }
 
 export default defineConfig({
+
   title: 'iUI',
   description: 'iUI',
   lang: 'cn-ZH',
@@ -49,15 +51,15 @@ export default defineConfig({
       dark: 'vitesse-dark'
     },
     lineNumbers: true,
-    // config(md) {
-    //   md.use(componentPreview)
-    //   md.use(containerPreview)
-    // }
+    config(md) {
+      md.use(componentPreview)
+      md.use(containerPreview)
+    }
   },
   vite: {
     base: '/',
     plugins: [
-      markdown(),
+
     ],
     build: {
       // outDir: 'doc'

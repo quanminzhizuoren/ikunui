@@ -1,22 +1,12 @@
 # 栅格
 
-第一个示例：
+## 基础用法
 
-```vue preview
-<template>
-  <i-row :span="6">
-    <i-col>1</i-col>
-    <i-col>2</i-col>
-    <i-col>3</i-col>
-    <i-col>4</i-col>
-  </i-row>
-</template>
+:::preview ||
 
-<script setup lang="ts">
-import { ref } from 'vue'
-const count = ref(0)
-</script>
-```
+demo-preview=../demo/grid/basic.vue
+
+:::
 
 第二个示例：
 
