@@ -54,14 +54,5 @@ export default defineConfig({
       md.use(componentPreview)
       md.use(containerPreview)
     }
-  },
-  vite: {
-    base: '/ikunui',
-    plugins: [
-
-    ],
-    build: {
-      // outDir: 'doc'
-    }
   }
 })
