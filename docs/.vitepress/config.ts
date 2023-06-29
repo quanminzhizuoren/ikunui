@@ -26,11 +26,10 @@ const sidebar: DefaultTheme.Sidebar = {
 }
 
 export default defineConfig({
-
+  base: '/ikunui',
   title: 'iUI',
   description: 'iUI',
   lang: 'cn-ZH',
-  base: '/',
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }]
