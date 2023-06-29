@@ -55,13 +55,13 @@ export default defineConfig({
       md.use(containerPreview)
     }
   },
-  vite: {
-    base: '/',
-    plugins: [
+  // vite: {
+  //   base: '/ikunui',
+  //   plugins: [
 
-    ],
-    build: {
-      // outDir: 'doc'
-    }
-  }
+  //   ],
+  //   build: {
+  //     // outDir: 'doc'
+  //   }
+  // }
 })
