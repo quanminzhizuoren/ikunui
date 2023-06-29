@@ -47,7 +47,7 @@ jobs:
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: quanminzhizuoren/ikunui@v2
         with:
           # 将要部署资产的 GitHub 存储库（默认$GITHUB_REPOSITORY）
           repo: quanminzhizuoren/ikunui
