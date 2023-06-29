@@ -31,7 +31,6 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "build": "run-p type-check build-only",
-    "copy": "node script/copy.js",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",

@@ -32,7 +32,7 @@ export default defineConfig({
   lang: 'cn-ZH',
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '/logo.svg' }]
+    ['link', { rel: 'icon', href: '/ikunui/logo.svg' }]
   ],
   themeConfig: {
     logo: '/logo.svg',
@@ -55,13 +55,13 @@ export default defineConfig({
       md.use(containerPreview)
     }
   },
-  // vite: {
-  //   base: '/ikunui',
-  //   plugins: [
+  vite: {
+    base: '/ikunui',
+    plugins: [
 
-  //   ],
-  //   build: {
-  //     // outDir: 'doc'
-  //   }
-  // }
+    ],
+    build: {
+      // outDir: 'doc'
+    }
+  }
 })
